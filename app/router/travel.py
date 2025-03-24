@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Depends
 
-app = APIRouter(prefix="/travel")
+router = APIRouter(prefix="/travel")
 
-app.post("/")
+router.post("/test")
 
