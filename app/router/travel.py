@@ -2,5 +2,6 @@ from fastapi import APIRouter, HTTPException, Depends
 
 router = APIRouter(prefix="/travel")
 
-router.post("/test")
-
+@router.get("/test")
+def test():
+    return {"MESSAGE":"IN TRAVEL TEST"}
